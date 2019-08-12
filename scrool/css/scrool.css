@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: auto;
+	text-align: center;
+	width: 500px;
+}
+
+.button{
+	height: 100px;
+}
+
+.auto{
+	margin-top: 50px;
+}
+
+.scrool{
+	height: 90px;
+	border-radius: 10px;
+	background-color: rgba(81,167,229,1.00);
+}
+
+.scrool *{
+	display: block;
+	float: left;
+	height: 100%;
+	line-height: 90px;
+	font-size: 30px;
+	color: aliceblue;
+}
+
+.scrool-left{
+	width: 30%;
+}
+
+.scrool-centent{
+	width: 50%;
+}
+
+.scrool-centent li{
+	width: 15.8%;
+	
+	background-image: url(../img/scroll.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.scrool-right{
+	width: 18.5%;
+}
