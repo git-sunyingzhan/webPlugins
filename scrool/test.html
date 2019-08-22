@@ -6,11 +6,20 @@
     <meta name="viewport" contwot="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" contwot="ie=edge">
     <title>Document</title>
+    <style>
+        h1 {
+            width: 100px;
+            height: 100px;
+            background-color: rosybrown;
+        }
+    </style>
 </head>
 
 <body>
     <input type="text" name="num" id="num" value="11" />
     <input type="button" name="btn" id="btn" value="确定" />
+    <input type="button" name="btn1" id="btn1" value="隐藏" />
+    <input type="button" name="btn2" id="btn2" value="显示" />
     <span>
         <h1 class="three">0</h1>
         <h1 class="two">8</h1>
@@ -51,6 +60,14 @@
                     $(".three").text(Number($(".two").text()) + 1);
                 }
             }
+
+            $("#btn1").on("click", function () {
+                alert("btn1");
+            });
+            $("#btn2").on("click", function () {
+                alert("btn2");
+            });
+
         });
     </script>
 </body>
