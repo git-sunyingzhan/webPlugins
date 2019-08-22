@@ -10,7 +10,10 @@
         h1 {
             width: 100px;
             height: 100px;
-            background-color: rosybrown;
+            background-image: url("../scrool/scroll.png");
+            background-repeat: no-repeat;
+            text-align: center;
+            color: aliceblue;
         }
     </style>
 </head>
@@ -62,7 +65,10 @@
             }
 
             $("#btn1").on("click", function () {
-                alert("btn1");
+                $(".one").animate({
+                    height: "toggle",
+                });
+                $(".one").text(2);
             });
             $("#btn2").on("click", function () {
                 alert("btn2");
