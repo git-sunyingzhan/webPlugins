@@ -12,8 +12,8 @@
     <input type="text" name="num" id="num" value="11" />
     <input type="button" name="btn" id="btn" value="确定" />
     <span>
-        <h1 class="">0</h1>
-        <h1 class="two">3</h1>
+        <h1 class="three">0</h1>
+        <h1 class="two">8</h1>
         <h1 class="one">0</h1>
     </span>
 
@@ -44,6 +44,11 @@
                 // 如果个位等于零，十位加1
                 if ($(".one").text() == 0) {
                     $(".two").text(Number($(".two").text()) + 1);
+                }
+                // 如果十位等于零，百位加1
+                if ($(".two").text() == 10) {
+                    $(".two").text(0);
+                    $(".three").text(Number($(".two").text()) + 1);
                 }
             }
         });
